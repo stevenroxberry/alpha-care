@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_281" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="model.Patient">
+    <void property="email">
+     <string>kurtisemail@email.com</string>
+    </void>
+    <void property="location">
+     <string>Chicago, IL</string>
+    </void>
+    <void property="name">
+     <string>Kurtis Miles</string>
+    </void>
+    <void property="patientId">
+     <int>11211</int>
+    </void>
+    <void property="patientRecord">
+     <object class="model.MedicalRecord">
+      <void property="bloodType">
+       <string>O-</string>
+      </void>
+      <void property="covidImmunized">
+       <boolean>true</boolean>
+      </void>
+      <void property="gender">
+       <string>Male</string>
+      </void>
+      <void property="height">
+       <string>5&apos; 11&apos;&apos;</string>
+      </void>
+      <void property="insuranceInfo">
+       <string>HMS</string>
+      </void>
+      <void property="prescriptions">
+       <array class="java.lang.String" length="3">
+        <void index="0">
+         <string>Sildenafil</string>
+        </void>
+        <void index="1">
+         <string>Ibuprofen</string>
+        </void>
+        <void index="2">
+         <string>Azithromycin</string>
+        </void>
+       </array>
+      </void>
+      <void property="weight">
+       <string>180 lbs</string>
+      </void>
+     </object>
+    </void>
+    <void property="patientSurvey">
+     <object class="model.CovidSurvey"/>
+    </void>
+    <void property="phoneNumber">
+     <string>814-555-5555</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Patient">
+    <void property="email">
+     <string>johndoe@email.com</string>
+    </void>
+    <void property="location">
+     <string>Nowhere, PA</string>
+    </void>
+    <void property="name">
+     <string>John Doe</string>
+    </void>
+    <void property="patientId">
+     <int>11311</int>
+    </void>
+    <void property="patientRecord">
+     <object class="model.MedicalRecord">
+      <void property="bloodType">
+       <string>AB+</string>
+      </void>
+      <void property="gender">
+       <string>Male</string>
+      </void>
+      <void property="height">
+       <string>6&apos; 2&apos;&apos;</string>
+      </void>
+      <void property="insuranceInfo">
+       <string>Blood Cross Blue Shield</string>
+      </void>
+      <void property="prescriptions">
+       <array class="java.lang.String" length="5">
+        <void index="0">
+         <string>Metoprolol</string>
+        </void>
+        <void index="1">
+         <string>Omeprazole</string>
+        </void>
+        <void index="2">
+         <string>Prednisone</string>
+        </void>
+        <void index="3">
+         <string>Bupropion</string>
+        </void>
+        <void index="4">
+         <string>Tylenol</string>
+        </void>
+       </array>
+      </void>
+      <void property="weight">
+       <string>145 lbs</string>
+      </void>
+     </object>
+    </void>
+    <void property="patientSurvey">
+     <object class="model.CovidSurvey"/>
+    </void>
+    <void property="phoneNumber">
+     <string>814-555-5555</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="model.Patient">
+    <void property="email">
+     <string>sallymae@email.com</string>
+    </void>
+    <void property="location">
+     <string>Nowhere, NY</string>
+    </void>
+    <void property="name">
+     <string>Sally Mae</string>
+    </void>
+    <void property="patientId">
+     <int>11411</int>
+    </void>
+    <void property="patientRecord">
+     <object class="model.MedicalRecord">
+      <void property="bloodType">
+       <string>B-</string>
+      </void>
+      <void property="gender">
+       <string>Female</string>
+      </void>
+      <void property="height">
+       <string>5&apos; 0&apos;&apos;</string>
+      </void>
+      <void property="insuranceInfo">
+       <string>AETNA</string>
+      </void>
+      <void property="prescriptions">
+       <array class="java.lang.String" length="9">
+        <void index="0">
+         <string>Losartan</string>
+        </void>
+        <void index="1">
+         <string>Albuterol</string>
+        </void>
+        <void index="2">
+         <string>Metformin</string>
+        </void>
+        <void index="3">
+         <string>Atorvastatin</string>
+        </void>
+        <void index="4">
+         <string>Oxycodone</string>
+        </void>
+        <void index="5">
+         <string>Tamsulosin</string>
+        </void>
+        <void index="6">
+         <string>Dextroamphetamine</string>
+        </void>
+        <void index="7">
+         <string>Bupropion</string>
+        </void>
+        <void index="8">
+         <string>Rosuvastatin</string>
+        </void>
+       </array>
+      </void>
+      <void property="weight">
+       <string>360 lbs</string>
+      </void>
+     </object>
+    </void>
+    <void property="patientSurvey">
+     <object class="model.CovidSurvey"/>
+    </void>
+    <void property="phoneNumber">
+     <string>814-555-5555</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DoctorDashboardCntl">
+   <children>
+      <Pane fx:id="doctorDashboardFrame" layoutX="2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TabPane prefHeight="401.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="dashboardTab" text="Dashboard">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="656.0">
+                           <children>
+                              <Label fx:id="welcomeText" layoutX="33.0" layoutY="14.0" prefHeight="29.0" prefWidth="113.0" text="Welcome">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="doctorNameLabel" layoutX="115.0" layoutY="14.0" prefHeight="29.0" prefWidth="217.0" text="Dr. Kinyua">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="numberOfPatients" layoutX="316.0" layoutY="279.0" prefHeight="19.0" text="Number of Patients">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ListView fx:id="patientListView" layoutX="316.0" layoutY="97.0" prefHeight="170.0" prefWidth="240.0" />
+                              <Label fx:id="patientLabel" layoutX="316.0" layoutY="67.0" text="List of Patients">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="numberOfAppointmentsLabel" layoutX="36.0" layoutY="279.0" text="Number of Appointments">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="appointmentNumber" layoutX="217.0" layoutY="272.0" text="0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="appointmentLabel" layoutX="32.0" layoutY="67.0" text="Todays Appointments">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ListView fx:id="appointmentList" layoutX="32.0" layoutY="97.0" prefHeight="170.0" prefWidth="240.0" />
+                              <Button fx:id="logoutButton" layoutX="512.0" layoutY="326.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+                              <Button fx:id="testButton" layoutX="504.0" layoutY="277.0" mnemonicParsing="false" onAction="#navigateMedicalRecord" text="View" />
+                              <Label fx:id="totalNumber" layoutX="453.0" layoutY="272.0" text="0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="schedulingTab" text="Scheduling">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="147.0" layoutY="61.0" prefHeight="27.0" prefWidth="307.0" text="Schudule an appointment with a patient." textAlignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="patientNameText" layoutX="156.0" layoutY="126.0" text="Patient's Name:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="reasonText" layoutX="96.0" layoutY="178.0" text="Reason for Appointment:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="selectDateText" layoutX="179.0" layoutY="228.0" text="Select Date:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="patientNameField" layoutX="280.0" layoutY="124.0" prefHeight="27.0" prefWidth="187.0" promptText="Patient's Full Name" />
+                              <TextField fx:id="appointmentReasonField" layoutX="280.0" layoutY="174.0" prefHeight="27.0" prefWidth="187.0" promptText="Doctor's Notes" />
+                              <DatePicker fx:id="dataPicker" layoutX="280.0" layoutY="224.0" promptText="Click on the Calendar" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label fx:id="alphaCareLabel" layoutX="510.0" layoutY="2.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#navigateHome" style="-fx-cursor: hand;" text="AlphaCare">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
